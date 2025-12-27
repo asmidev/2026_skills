@@ -1,0 +1,6 @@
+- Masala nomi: Two Sum
+- Platforma: LeetCode
+- Daraja: Easy
+- Yechim tili: Python
+- Qisqa yechim sharhi: HashMap orqali tezkor yechim
+- Date: 2026-01-15
