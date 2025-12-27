@@ -35,9 +35,9 @@ books-list.2026/
 ## I. ODATLAR, INTIZOM VA SHAXSIY SAMARADORLIK (8 ta)
 Bu kitoblar bilan inglizcha o‘qishga moslashasiz.
 
--1.Atomic Habits — James Clear
--2.Deep Work — Cal Newport
--3.Essentialism — Greg McKeown
+- 1.Atomic Habits — James Clear
+- 2.Deep Work — Cal Newport
+- 3.Essentialism — Greg McKeown
 -4.Make Time — Jake Knapp
 -5.The 12 Week Year — Brian Moran
 -6.Indistractable — Nir Eyal
