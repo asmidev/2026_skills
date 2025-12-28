@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Hisobim - Elektron Kutubxona</title>
+    <link rel="stylesheet" href="../css/styles-acount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Elektron Kutubxona</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Bosh sahifa</a></li>
+                <li><a href="/catalog">Katalog</a></li>
+                <li><a href="/search">Qidiruv</a></li>
+                <li><a href="/acount">Hisob</a></li>
+                <li><a href="/about">Biz haqimizda</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon"><i class="fas fa-bell"></i><span class="notification-badge">5</span></button>
+                <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40/667eea/ffffff?text=AK" alt="User">
+                    <span>Alisher Karimov</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Account Header -->
+    <section class="account-header">
+        <div class="container">
+            <div class="profile-banner">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <img src="https://via.placeholder.com/120/667eea/ffffff?text=AK" alt="Avatar">
+                        <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+                    </div>
+                    <div class="profile-details">
+                        <h1>Alisher Karimov</h1>
+                        <p class="username">@alisher_karimov</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <i class="fas fa-book-reader"></i>
+                                <span><strong>45</strong> o'qilgan</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                <span><strong>128</strong> sevimli</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span><strong>89</strong> sharh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-edit-profile"><i class="fas fa-edit"></i> Profilni Tahrirlash</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Dashboard -->
+    <section class="account-dashboard">
+        <div class="container">
+            <div class="dashboard-layout">
+                <!-- Sidebar Menu -->
+                <aside class="dashboard-sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="#overview" class="nav-item active">
+                            <i class="fas fa-th-large"></i>
+                            <span>Umumiy Ko'rinish</span>
+                        </a>
+                        <a href="#library" class="nav-item">
+                            <i class="fas fa-book"></i>
+                            <span>Mening Kutubxonam</span>
+                        </a>
+                        <a href="#reading" class="nav-item">
+                            <i class="fas fa-book-reader"></i>
+                            <span>O'qish Ro'yxati</span>
+                        </a>
+                        <a href="#favorites" class="nav-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Sevimlilar</span>
+                        </a>
+                        <a href="#history" class="nav-item">
+                            <i class="fas fa-history"></i>
+                            <span>Tarix</span>
+                        </a>
+                        <a href="#reviews" class="nav-item">
+                            <i class="fas fa-star"></i>
+                            <span>Mening Sharhlarim</span>
+                        </a>
+                        <a href="#orders" class="nav-item">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Buyurtmalar</span>
+                        </a>
+                        <a href="#subscriptions" class="nav-item">
+                            <i class="fas fa-crown"></i>
+                            <span>Obunalar</span>
+                        </a>
+                        <a href="#settings" class="nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Sozlamalar</span>
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="dashboard-content">
+                    <!-- Overview Section -->
+                    <div class="content-section active" id="overview">
+                        <div class="section-header">
+                            <h2>Umumiy Ko'rinish</h2>
+                            <p>Hisobingiz va faoliyatingiz haqida ma'lumot</p>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon books">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>156</h3>
+                                    <p>Jami Kitoblar</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon reading">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>12</h3>
+                                    <p>O'qilmoqda</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon completed">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>45</h3>
+                                    <p>Tugatilgan</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon hours">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>234</h3>
+                                    <p>O'qish Soatlari</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Continue Reading -->
+                        <div class="section-block">
+                            <div class="block-header">
+                                <h3>O'qishda Davom Eting</h3>
+                                <a href="#reading" class="view-all">Hammasini ko'rish</a>
+                            </div>
+                            <div class="reading-list">
+                                <div class="reading-card">
+                                    <img src="https://via.placeholder.com/100x150/4A90E2/ffffff?text=Kitob" alt="Kitob">
+                                    <div class="reading-info">
+                                        <h4>O'tkan Kunlar</h4>
+                                        <p class="author">Abdulla Qodiriy</p>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 65%"></div>
+                                        </div>
+                                        <p class="progress-text">65% - 296/456 sahifa</p>
+                                    </div>
+                                    <button class="btn-continue"><i class="fas fa-play"></i> Davom Etish</button>
+                                </div>
+                                <div class="reading-card">
+                                    <img src="https://via.placeholder.com/100x150/E94E77/ffffff?text=Kitob" alt="Kitob">
+                                    <div class="reading-info">
+                                        <h4>Sarob</h4>
+                                        <p class="author">Abdulla Qodiriy</p>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 35%"></div>
+                                        </div>
+                                        <p class="progress-text">35% - 136/389 sahifa</p>
+                                    </div>
+                                    <button class="btn-continue"><i class="fas fa-play"></i> Davom Etish</button>
+                                </div>
+                                <div class="reading-card">
+                                    <img src="https://via.placeholder.com/100x150/50C878/ffffff?text=Kitob" alt="Kitob">
+                                    <div class="reading-info">
+                                        <h4>Kecha va Kunduz</h4>
+                                        <p class="author">Cho'lpon</p>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 88%"></div>
+                                        </div>
+                                        <p class="progress-text">88% - 244/278 sahifa</p>
+                                    </div>
+                                    <button class="btn-continue"><i class="fas fa-play"></i> Davom Etish</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reading Activity -->
+                        <div class="section-block">
+                            <div class="block-header">
+                                <h3>O'qish Faoliyati</h3>
+                                <select class="time-filter">
+                                    <option>Bu hafta</option>
+                                    <option>Bu oy</option>
+                                    <option>Bu yil</option>
+                                </select>
+                            </div>
+                            <div class="activity-chart">
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%"><span>Dush</span></div>
+                                    <div class="bar" style="height: 80%"><span>Sesh</span></div>
+                                    <div class="bar" style="height: 45%"><span>Chor</span></div>
+                                    <div class="bar" style="height: 90%"><span>Pay</span></div>
+                                    <div class="bar" style="height: 70%"><span>Jum</span></div>
+                                    <div class="bar" style="height: 95%"><span>Shan</span></div>
+                                    <div class="bar" style="height: 85%"><span>Yak</span></div>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item">
+                                        <span class="color-box"></span>
+                                        <span>O'qish vaqti (soatda)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recommendations -->
+                        <div class="section-block">
+                            <div class="block-header">
+                                <h3>Siz Uchun Tavsiyalar</h3>
+                                <a href="catalog.html" class="view-all">Barchasi</a>
+                            </div>
+                            <div class="recommendations-grid">
+                                <div class="recommendation-card">
+                                    <img src="https://via.placeholder.com/150x220/9B59B6/ffffff?text=Kitob" alt="Kitob">
+                                    <h4>Hamza Asarlari</h4>
+                                    <p>Hamza Hakimzoda</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.7</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-card">
+                                    <img src="https://via.placeholder.com/150x220/E67E22/ffffff?text=Kitob" alt="Kitob">
+                                    <h4>Ufq</h4>
+                                    <p>Said Ahmad</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.3</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-card">
+                                    <img src="https://via.placeholder.com/150x220/16A085/ffffff?text=Kitob" alt="Kitob">
+                                    <h4>Bahor Qaytmaydi</h4>
+                                    <p>Odil Yoqubov</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.6</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-card">
+                                    <img src="https://via.placeholder.com/150x220/C0392B/ffffff?text=Kitob" alt="Kitob">
+                                    <h4>Qutlug' Qon</h4>
+                                    <p>Pirimqul Qodirov</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity -->
+                        <div class="section-block">
+                            <div class="block-header">
+                                <h3>So'nggi Faoliyat</h3>
+                            </div>
+                            <div class="activity-feed">
+                                <div class="activity-item">
+                                    <div class="activity-icon read">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Kitob o'qidingiz:</strong> "O'tkan Kunlar" - 25 sahifa</p>
+                                        <span class="time">2 soat oldin</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon like">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Sevimliga qo'shdingiz:</strong> "Sarob"</p>
+                                        <span class="time">5 soat oldin</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon review">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Sharh qoldirdingiz:</strong> "Mehrobdan Chayon" - 5 yulduz</p>
+                                        <span class="time">1 kun oldin</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon download">
+                                        <i class="fas fa-download"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Yuklab oldingiz:</strong> "Kecha va Kunduz" - PDF format</p>
+                                        <span class="time">2 kun oldin</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon purchase">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Xarid qildingiz:</strong> 3 ta kitob - 65,000 so'm</p>
+                                        <span class="time">3 kun oldin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My Library Section -->
+                    <div class="content-section" id="library">
+                        <div class="section-header">
+                            <h2>Mening Kutubxonam</h2>
+                            <p>156 ta kitob mavjud</p>
+                        </div>
+
+                        <div class="library-filters">
+                            <button class="filter-btn active">Hammasi</button>
+                            <button class="filter-btn">O'qilmoqda</button>
+                            <button class="filter-btn">Tugatilgan</button>
+                            <button class="filter-btn">Rejada</button>
+                        </div>
+
+                        <div class="library-grid">
+                            <div class="library-card">
+                                <img src="https://via.placeholder.com/150x220/4A90E2/ffffff?text=Kitob" alt="Kitob">
+                                <div class="library-card-overlay">
+                                    <button class="overlay-btn"><i class="fas fa-book-open"></i> O'qish</button>
+                                    <button class="overlay-btn"><i class="fas fa-download"></i></button>
+                                    <button class="overlay-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                                <div class="library-card-info">
+                                    <h4>O'tkan Kunlar</h4>
+                                    <p>Abdulla Qodiriy</p>
+                                    <div class="progress-mini">
+                                        <div style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="library-card">
+                                <img src="https://via.placeholder.com/150x220/E94E77/ffffff?text=Kitob" alt="Kitob">
+                                <div class="library-card-overlay">
+                                    <button class="overlay-btn"><i class="fas fa-book-open"></i> O'qish</button>
+                                    <button class="overlay-btn"><i class="fas fa-download"></i></button>
+                                    <button class="overlay-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                                <div class="library-card-info">
+                                    <h4>Sarob</h4>
+                                    <p>Abdulla Qodiriy</p>
+                                    <div class="progress-mini">
+                                        <div style="width: 35%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="library-card">
+                                <img src="https://via.placeholder.com/150x220/50C878/ffffff?text=Kitob" alt="Kitob">
+                                <div class="library-card-overlay">
+                                    <button class="overlay-btn"><i class="fas fa-book-open"></i> O'qish</button>
+                                    <button class="overlay-btn"><i class="fas fa-download"></i></button>
+                                    <button class="overlay-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                                <div class="library-card-info">
+                                    <h4>Kecha va Kunduz</h4>
+                                    <p>Cho'lpon</p>
+                                    <div class="progress-mini">
+                                        <div style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="library-card">
+                                <img src="https://via.placeholder.com/150x220/F39C12/ffffff?text=Kitob" alt="Kitob">
+                                <div class="library-card-overlay">
+                                    <button class="overlay-btn"><i class="fas fa-book-open"></i> O'qish</button>
+                                    <button class="overlay-btn"><i class="fas fa-download"></i></button>
+                                    <button class="overlay-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                                <div class="library-card-info">
+                                    <h4>Mehrobdan Chayon</h4>
+                                    <p>Abdulla Qahhor</p>
+                                    <div class="progress-mini">
+                                        <div style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Elektron Kutubxona</h3>
+                    <p>Biz O'zbekistondagi eng katta elektron kutubxona platformasimiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="home.html">Bosh sahifa</a></li>
+                        <li><a href="catalog.html">Katalog</a></li>
+                        <li><a href="search.html">Qidiruv</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Yordam</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Yetkazib berish</a></li>
+                        <li><a href="#">Qaytarish</a></li>
+                        <li><a href="#">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</li>
+                        <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@ekutubxona.uz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elektron Kutubxona. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

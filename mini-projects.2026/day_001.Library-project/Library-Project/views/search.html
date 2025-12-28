@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qidiruv - Elektron Kutubxona</title>
+    <link rel="stylesheet" href="../css/styles-search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Elektron Kutubxona</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Bosh sahifa</a></li>
+                <li><a href="/catalog">Katalog</a></li>
+                <li><a href="/search">Qidiruv</a></li>
+                <li><a href="/acount">Hisob</a></li>
+                <li><a href="/about">Biz haqimizda</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon"><i class="fas fa-search"></i></button>
+                <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-primary">Kirish</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Hero Section -->
+    <section class="search-hero">
+        <div class="container">
+            <h1>50,000+ Kitobdan Qidiring</h1>
+            <p>Kitob, muallif, ISBN yoki mavzu bo'yicha izlang</p>
+
+            <!-- Advanced Search Form -->
+            <div class="search-container">
+                <div class="main-search">
+                    <input type="text" id="mainSearch" placeholder="Qidirish..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i> Qidirish</button>
+                </div>
+
+                <div class="search-tabs">
+                    <button class="tab-btn active" data-tab="simple">Oddiy Qidiruv</button>
+                    <button class="tab-btn" data-tab="advanced">Kengaytirilgan</button>
+                    <button class="tab-btn" data-tab="isbn">ISBN</button>
+                </div>
+
+                <!-- Simple Search -->
+                <div class="tab-content active" id="simple">
+                    <div class="search-suggestions">
+                        <h4>Mashhur Qidiruvlar:</h4>
+                        <div class="suggestion-tags">
+                            <span class="tag">Abdulla Qodiriy</span>
+                            <span class="tag">O'tkan kunlar</span>
+                            <span class="tag">Badiiy adabiyot</span>
+                            <span class="tag">Tarixiy romanlar</span>
+                            <span class="tag">Bolalar uchun</span>
+                            <span class="tag">She'rlar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Search -->
+                <div class="tab-content" id="advanced">
+                    <div class="advanced-search-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Kitob Nomi</label>
+                                <input type="text" placeholder="Kitob nomini kiriting">
+                            </div>
+                            <div class="form-group">
+                                <label>Muallif</label>
+                                <input type="text" placeholder="Muallif ismini kiriting">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nashriyot</label>
+                                <input type="text" placeholder="Nashriyot nomi">
+                            </div>
+                            <div class="form-group">
+                                <label>Yil</label>
+                                <div class="year-range">
+                                    <input type="number" placeholder="Dan" min="1900" max="2025">
+                                    <span>-</span>
+                                    <input type="number" placeholder="Gacha" min="1900" max="2025">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Kategoriya</label>
+                                <select>
+                                    <option>Hammasi</option>
+                                    <option>Badiiy Adabiyot</option>
+                                    <option>Fan va Texnologiya</option>
+                                    <option>Ta'lim</option>
+                                    <option>San'at</option>
+                                    <option>Tarix</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Til</label>
+                                <select>
+                                    <option>Hammasi</option>
+                                    <option>O'zbek</option>
+                                    <option>Rus</option>
+                                    <option>Ingliz</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn-search-advanced">
+                            <i class="fas fa-search"></i> Kengaytirilgan Qidiruv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ISBN Search -->
+                <div class="tab-content" id="isbn">
+                    <div class="isbn-search">
+                        <input type="text" placeholder="ISBN raqamini kiriting (13 yoki 10 raqam)" class="isbn-input">
+                        <button class="btn-search-isbn"><i class="fas fa-barcode"></i> ISBN bo'yicha Qidirish</button>
+                        <p class="isbn-info">
+                            <i class="fas fa-info-circle"></i>
+                            ISBN raqami odatda kitob orqa qismida yoki birinchi sahifasida joylashgan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results">
+        <div class="container">
+            <!-- Search Stats -->
+            <div class="search-stats">
+                <h2>Qidiruv Natijalari</h2>
+                <p><strong>148</strong> ta kitob topildi <span class="search-term">"abdulla qodiriy"</span> so'rovi
+                    bo'yicha</p>
+                <span class="search-time">0.34 soniyada</span>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="results-filter-bar">
+                <div class="filter-chips">
+                    <button class="chip active">Hammasi (148)</button>
+                    <button class="chip">Kitoblar (132)</button>
+                    <button class="chip">Audio (12)</button>
+                    <button class="chip">Video (4)</button>
+                </div>
+                <select class="sort-dropdown">
+                    <option>Eng mos</option>
+                    <option>Yangi</option>
+                    <option>Mashhur</option>
+                    <option>Narx: Arzon</option>
+                    <option>Narx: Qimmat</option>
+                </select>
+            </div>
+
+            <!-- Results Grid -->
+            <div class="results-grid">
+                <!-- Result Item 1 -->
+                <div class="result-item featured">
+                    <div class="result-image">
+                        <img src="https://via.placeholder.com/150x220/4A90E2/ffffff?text=Kitob" alt="Kitob">
+                        <span class="featured-badge">TOP Natija</span>
+                    </div>
+                    <div class="result-content">
+                        <h3>O'tkan Kunlar</h3>
+                        <p class="author"><i class="fas fa-user"></i> Abdulla Qodiriy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8</span>
+                            <span class="reviews">(1,234 sharh)</span>
+                        </div>
+                        <p class="description">
+                            "O'tkan kunlar" - Abdulla Qodiriyning mashhur tarixiy romanı. Asar XX asr boshlarida
+                            Toshkentdagi hayot va madaniyatni tasvirlaydi...
+                        </p>
+                        <div class="result-meta">
+                            <span><i class="fas fa-book"></i> 456 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek tili</span>
+                            <span><i class="fas fa-calendar"></i> 1926-yil</span>
+                            <span><i class="fas fa-file-pdf"></i> PDF, EPUB</span>
+                        </div>
+                        <div class="result-footer">
+                            <div class="price-info">
+                                <span class="price">Bepul</span>
+                                <span class="price-note">Ochiq manbali</span>
+                            </div>
+                            <div class="result-actions">
+                                <button class="btn-outline"><i class="fas fa-eye"></i> Ko'rish</button>
+                                <button class="btn-filled"><i class="fas fa-download"></i> Yuklab Olish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Item 2 -->
+                <div class="result-item">
+                    <div class="result-image">
+                        <img src="https://via.placeholder.com/150x220/E94E77/ffffff?text=Kitob" alt="Kitob">
+                    </div>
+                    <div class="result-content">
+                        <h3>Sarob</h3>
+                        <p class="author"><i class="fas fa-user"></i> Abdulla Qodiriy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.5</span>
+                            <span class="reviews">(892 sharh)</span>
+                        </div>
+                        <p class="description">
+                            Abdulla Qodiriyning yana bir mashhur asari. Roman XIX asr oxiri va XX asr boshlarida
+                            Turkiston hayotini tasvirlaydi...
+                        </p>
+                        <div class="result-meta">
+                            <span><i class="fas fa-book"></i> 389 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek tili</span>
+                            <span><i class="fas fa-calendar"></i> 1935-yil</span>
+                            <span><i class="fas fa-file-pdf"></i> PDF</span>
+                        </div>
+                        <div class="result-footer">
+                            <div class="price-info">
+                                <span class="price">15,000 so'm</span>
+                            </div>
+                            <div class="result-actions">
+                                <button class="btn-outline"><i class="fas fa-eye"></i> Ko'rish</button>
+                                <button class="btn-filled"><i class="fas fa-cart-plus"></i> Savatchaga</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Item 3 -->
+                <div class="result-item">
+                    <div class="result-image">
+                        <img src="https://via.placeholder.com/150x220/50C878/ffffff?text=Kitob" alt="Kitob">
+                        <span class="new-badge">Yangi</span>
+                    </div>
+                    <div class="result-content">
+                        <h3>Abdulla Qodiriy Hayoti va Ijodi</h3>
+                        <p class="author"><i class="fas fa-user"></i> Turli Mualliflar</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                            <span class="reviews">(456 sharh)</span>
+                        </div>
+                        <p class="description">
+                            Buyuk yozuvchi Abdulla Qodiriy hayoti, ijodi va asarlari haqida to'liq ma'lumot beruvchi
+                            tadqiqot asari...
+                        </p>
+                        <div class="result-meta">
+                            <span><i class="fas fa-book"></i> 524 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek tili</span>
+                            <span><i class="fas fa-calendar"></i> 2023-yil</span>
+                            <span><i class="fas fa-file-pdf"></i> PDF, EPUB</span>
+                        </div>
+                        <div class="result-footer">
+                            <div class="price-info">
+                                <span class="price">35,000 so'm</span>
+                            </div>
+                            <div class="result-actions">
+                                <button class="btn-outline"><i class="fas fa-eye"></i> Ko'rish</button>
+                                <button class="btn-filled"><i class="fas fa-cart-plus"></i> Savatchaga</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Item 4 -->
+                <div class="result-item">
+                    <div class="result-image">
+                        <img src="https://via.placeholder.com/150x220/F39C12/ffffff?text=Audio" alt="Audio">
+                        <span class="audio-badge"><i class="fas fa-headphones"></i> Audio</span>
+                    </div>
+                    <div class="result-content">
+                        <h3>O'tkan Kunlar - Audio Kitob</h3>
+                        <p class="author"><i class="fas fa-user"></i> Abdulla Qodiriy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7</span>
+                            <span class="reviews">(678 sharh)</span>
+                        </div>
+                        <p class="description">
+                            "O'tkan kunlar" romanining professional ovozda o'qilgan audio versiyasi. Professional
+                            aktyorlar ishtirokida yozilgan...
+                        </p>
+                        <div class="result-meta">
+                            <span><i class="fas fa-clock"></i> 12 soat 34 daqiqa</span>
+                            <span><i class="fas fa-language"></i> O'zbek tili</span>
+                            <span><i class="fas fa-microphone"></i> HD Audio</span>
+                            <span><i class="fas fa-file-audio"></i> MP3</span>
+                        </div>
+                        <div class="result-footer">
+                            <div class="price-info">
+                                <span class="price">45,000 so'm</span>
+                            </div>
+                            <div class="result-actions">
+                                <button class="btn-outline"><i class="fas fa-play"></i> Tinglash</button>
+                                <button class="btn-filled"><i class="fas fa-cart-plus"></i> Savatchaga</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn-load-more">
+                    <i class="fas fa-plus-circle"></i> Ko'proq Yuklash (144 ta qoldi)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Searches Section -->
+    <section class="popular-section">
+        <div class="container">
+            <h2>Mashhur Qidiruvlar</h2>
+            <div class="popular-grid">
+                <div class="popular-card">
+                    <i class="fas fa-fire"></i>
+                    <h4>Badiiy Adabiyot</h4>
+                    <p>12,450 ta kitob</p>
+                </div>
+                <div class="popular-card">
+                    <i class="fas fa-star"></i>
+                    <h4>Bestsellers</h4>
+                    <p>890 ta kitob</p>
+                </div>
+                <div class="popular-card">
+                    <i class="fas fa-award"></i>
+                    <h4>Mukofotli Kitoblar</h4>
+                    <p>560 ta kitob</p>
+                </div>
+                <div class="popular-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Yangi Chiqgan</h4>
+                    <p>340 ta kitob</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <h2>Qidiruv Maslahatlari</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Kalit So'zlardan Foydalaning</h4>
+                    <p>Aniq natijalarga erishish uchun kitob nomi, muallif yoki mavzudan foydalaning</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <h4>Qo'shtirnoqlardan Foydalaning</h4>
+                    <p>"aniq ibora" shaklida qidirsangiz, aynan o'sha iborani topasiz</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h4>Filtrlardan Foydalaning</h4>
+                    <p>Kategoriya, til, yil va boshqa filtrlar yordamida natijalarni torting</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h4>Qidiruv Tarixingizni Saqlang</h4>
+                    <p>Hisob qayd etilganidan keyin barcha qidiruvlaringiz saqlanadi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Elektron Kutubxona</h3>
+                    <p>Biz O'zbekistondagi eng katta elektron kutubxona platformasimiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="home.html">Bosh sahifa</a></li>
+                        <li><a href="catalog.html">Katalog</a></li>
+                        <li><a href="search.html">Qidiruv</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Yordam</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Yetkazib berish</a></li>
+                        <li><a href="#">Qaytarish</a></li>
+                        <li><a href="#">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</li>
+                        <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@ekutubxona.uz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elektron Kutubxona. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

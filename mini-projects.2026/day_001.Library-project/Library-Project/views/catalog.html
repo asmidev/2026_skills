@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitoblar Katalogi - Elektron Kutubxona</title>
+    <link rel="stylesheet" href="../css/styles-catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Elektron Kutubxona</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Bosh sahifa</a></li>
+                <li><a href="/catalog">Katalog</a></li>
+                <li><a href="/search">Qidiruv</a></li>
+                <li><a href="/acount">Hisob</a></li>
+                <li><a href="/about">Biz haqimizda</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon"><i class="fas fa-search"></i></button>
+                <button class="btn-icon"><i class="fas fa-shopping-cart"></i><span class="cart-badge">3</span></button>
+                <button class="btn-primary">Kirish</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/"><i class="fas fa-home"></i> Bosh sahifa</a>
+            <span>/</span>
+            <span>Katalog</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="catalog-container">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3><i class="fas fa-filter"></i> Filtrlar</h3>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <h4>Kategoriyalar</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked>
+                            <span>Badiiy Adabiyot</span>
+                            <span class="count">(2,450)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Fan va Texnologiya</span>
+                            <span class="count">(1,230)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Ta'lim</span>
+                            <span class="count">(3,670)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>San'at</span>
+                            <span class="count">(890)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Tarix</span>
+                            <span class="count">(1,340)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Bolalar Adabiyoti</span>
+                            <span class="count">(2,120)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Biznes va Iqtisod</span>
+                            <span class="count">(980)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Psixologiya</span>
+                            <span class="count">(750)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="filter-group">
+                    <h4>Narx Oralig'i</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="100000" value="50000" class="range-slider">
+                        <div class="price-values">
+                            <span>0 so'm</span>
+                            <span>100,000 so'm</span>
+                        </div>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="radio" name="price">
+                            <span>Bepul</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="price">
+                            <span>0 - 20,000 so'm</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="price">
+                            <span>20,000 - 50,000 so'm</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="price">
+                            <span>50,000+ so'm</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="filter-group">
+                    <h4>Reyting</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="count">(450)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="count">(890)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="count">(1,230)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Language Filter -->
+                <div class="filter-group">
+                    <h4>Til</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked>
+                            <span>O'zbek</span>
+                            <span class="count">(8,450)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Rus</span>
+                            <span class="count">(4,230)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Ingliz</span>
+                            <span class="count">(6,670)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Boshqa</span>
+                            <span class="count">(1,120)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Format Filter -->
+                <div class="filter-group">
+                    <h4>Format</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>PDF</span>
+                            <span class="count">(12,450)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>EPUB</span>
+                            <span class="count">(8,230)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Audio Kitob</span>
+                            <span class="count">(3,670)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox">
+                            <span>Video</span>
+                            <span class="count">(890)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn-reset"><i class="fas fa-redo"></i> Filtrlarni Tozalash</button>
+            </div>
+        </aside>
+
+        <!-- Main Catalog Area -->
+        <main class="catalog-main">
+            <!-- Toolbar -->
+            <div class="catalog-toolbar">
+                <div class="results-info">
+                    <h2>Barcha Kitoblar</h2>
+                    <p>2,450 ta kitob topildi</p>
+                </div>
+                <div class="toolbar-actions">
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                    <select class="sort-select">
+                        <option>Mashhur</option>
+                        <option>Yangi</option>
+                        <option>Narx: Arzon</option>
+                        <option>Narx: Qimmat</option>
+                        <option>Reyting</option>
+                        <option>A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Active Filters -->
+            <div class="active-filters">
+                <span class="filter-tag">Badiiy Adabiyot <i class="fas fa-times"></i></span>
+                <span class="filter-tag">O'zbek tili <i class="fas fa-times"></i></span>
+                <button class="clear-all">Hammasini tozalash</button>
+            </div>
+
+            <!-- Books Grid -->
+            <div class="books-catalog-grid">
+                <!-- Book Card 1 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/4A90E2/ffffff?text=Kitob+1" alt="Kitob">
+                        <div class="book-badge">Yangi</div>
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Badiiy Adabiyot</span>
+                        <h3>O'tkan Kunlar</h3>
+                        <p class="author">Abdulla Qodiriy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8 (234)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 456 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">Bepul</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/E94E77/ffffff?text=Kitob+2" alt="Kitob">
+                        <div class="book-badge trending">TOP</div>
+                        <div class="book-actions">
+                            <button class="action-btn active"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Badiiy Adabiyot</span>
+                        <h3>Mehrobdan Chayon</h3>
+                        <p class="author">Abdulla Qahhor</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (567)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 324 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">Bepul</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/50C878/ffffff?text=Kitob+3" alt="Kitob">
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Tarixiy Roman</span>
+                        <h3>Sarob</h3>
+                        <p class="author">Abdulla Qodiriy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.5 (189)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 389 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">15,000 so'm</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/F39C12/ffffff?text=Kitob+4" alt="Kitob">
+                        <div class="book-badge discount">-20%</div>
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">She'rlar</span>
+                        <h3>Kecha va Kunduz</h3>
+                        <p class="author">Cho'lpon</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (423)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 278 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">12,000 so'm <del>15,000</del></p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/9B59B6/ffffff?text=Kitob+5" alt="Kitob">
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Dramaturgiya</span>
+                        <h3>Hamza Asarlari</h3>
+                        <p class="author">Hamza Hakimzoda Niyoziy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7 (312)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 512 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">Bepul</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/E67E22/ffffff?text=Kitob+6" alt="Kitob">
+                        <div class="book-badge">Audio</div>
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Roman</span>
+                        <h3>Ufq</h3>
+                        <p class="author">Said Ahmad</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.3 (156)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-headphones"></i> 8 soat</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">25,000 so'm</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 7 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/16A085/ffffff?text=Kitob+7" alt="Kitob">
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Hikoya</span>
+                        <h3>Bahor Qaytmaydi</h3>
+                        <p class="author">Odil Yoqubov</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.6 (278)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 198 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">Bepul</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 8 -->
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x300/C0392B/ffffff?text=Kitob+8" alt="Kitob">
+                        <div class="book-badge trending">Bestseller</div>
+                        <div class="book-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Tarixiy Roman</span>
+                        <h3>Qutlug' Qon</h3>
+                        <p class="author">Pirimqul Qodirov</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.9 (891)</span>
+                        </div>
+                        <div class="book-meta">
+                            <span><i class="fas fa-book"></i> 687 sahifa</span>
+                            <span><i class="fas fa-language"></i> O'zbek</span>
+                        </div>
+                        <div class="book-footer">
+                            <p class="price">28,000 so'm</p>
+                            <button class="btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <span>...</span>
+                <button class="page-btn">24</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Elektron Kutubxona</h3>
+                    <p>Biz O'zbekistondagi eng katta elektron kutubxona platformasimiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="home.html">Bosh sahifa</a></li>
+                        <li><a href="catalog.html">Katalog</a></li>
+                        <li><a href="search.html">Qidiruv</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Yordam</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Yetkazib berish</a></li>
+                        <li><a href="#">Qaytarish</a></li>
+                        <li><a href="#">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aloqa</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</li>
+                        <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@ekutubxona.uz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elektron Kutubxona. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
