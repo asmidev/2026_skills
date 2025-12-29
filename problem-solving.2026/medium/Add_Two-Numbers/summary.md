@@ -1,0 +1,5 @@
+- Masala nomi: Add Two Numbers
+- Platforma: LeetCode
+- Daraja: medium
+- Yechim tili: Javascript
+- Date: 29-12-2025
