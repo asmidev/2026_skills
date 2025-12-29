@@ -9,7 +9,7 @@ Texnologiyalar: HTML, CSS, TailwindCSS, JavaScript, Node.js, React.js
 ## 📂 Projects List
 
 ### HTML & CSS (Day 1–50)
-1. Personal Portfolio Webpage  
+1. Library Webpage  
 2. Landing Page (Single Section)  
 3. Responsive Navbar with CSS Hover Effects  
 4. Pricing Table Layout  
